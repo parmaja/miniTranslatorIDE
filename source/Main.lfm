@@ -5,23 +5,23 @@ object MainForm: TMainForm
   Width = 715
   ActiveControl = LocalValueEdit
   Caption = 'Mini Translator'
-  ClientHeight = 430
+  ClientHeight = 450
   ClientWidth = 715
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
   KeyPreview = True
   Menu = MainMenu
+  Position = poDefaultPosOnly
+  ShowHint = True
+  LCLVersion = '4.99.0.0'
   OnActivate = FormActivate
   OnClose = FormClose
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
   OnShow = FormShow
-  Position = poDefaultPosOnly
-  ShowHint = True
-  LCLVersion = '2.1.0.0'
   object LeftSplitter: TSplitter
     Left = 295
-    Height = 303
+    Height = 323
     Top = 104
     Width = 5
   end
@@ -36,12 +36,12 @@ object MainForm: TMainForm
   end
   object Panel2: TPanel
     Left = 300
-    Height = 303
+    Height = 323
     Top = 104
     Width = 415
     Align = alClient
     BevelOuter = bvNone
-    ClientHeight = 303
+    ClientHeight = 323
     ClientWidth = 415
     TabOrder = 0
     object Splitter1: TSplitter
@@ -110,12 +110,12 @@ object MainForm: TMainForm
     end
     object LocalPanel: TPanel
       Left = 0
-      Height = 197
+      Height = 217
       Top = 106
       Width = 415
       Align = alClient
       BevelOuter = bvNone
-      ClientHeight = 197
+      ClientHeight = 217
       ClientWidth = 415
       TabOrder = 0
       object Label6: TLabel
@@ -136,14 +136,14 @@ object MainForm: TMainForm
       end
       object LocalValueEdit: TMemo
         Left = 2
-        Height = 158
+        Height = 178
         Top = 38
         Width = 409
         Anchors = [akTop, akLeft, akRight, akBottom]
-        OnChange = LocalValueEditChange
         ParentBidiMode = False
         ScrollBars = ssBoth
         TabOrder = 0
+        OnChange = LocalValueEditChange
       end
       object CommentEdit: TEdit
         Left = 64
@@ -165,19 +165,19 @@ object MainForm: TMainForm
         Width = 31
         Anchors = [akTop, akRight]
         Caption = 'Edit'
-        OnClick = EditCommentBtnClick
         TabOrder = 2
+        OnClick = EditCommentBtnClick
       end
     end
   end
   object LeftLayoutPanel: TPanel
     Left = 0
-    Height = 303
+    Height = 323
     Top = 104
     Width = 295
     Align = alLeft
     BevelOuter = bvNone
-    ClientHeight = 303
+    ClientHeight = 323
     ClientWidth = 295
     TabOrder = 1
     object Panel3: TPanel
@@ -205,9 +205,9 @@ object MainForm: TMainForm
         Width = 258
         Anchors = [akTop, akLeft, akRight, akBottom]
         ItemHeight = 13
-        OnSelect = GroupsListSelect
         Style = csDropDownList
         TabOrder = 0
+        OnSelect = GroupsListSelect
       end
       object EditCommentBtn1: TButton
         Left = 263
@@ -216,18 +216,18 @@ object MainForm: TMainForm
         Width = 31
         Anchors = [akTop, akRight]
         Caption = 'Prop'
-        OnClick = EditCommentBtnClick
         TabOrder = 1
+        OnClick = EditCommentBtnClick
       end
     end
     object Panel4: TPanel
       Left = 0
-      Height = 259
+      Height = 279
       Top = 44
       Width = 295
       Align = alClient
       BevelOuter = bvNone
-      ClientHeight = 259
+      ClientHeight = 279
       ClientWidth = 295
       TabOrder = 1
       object Label3: TLabel
@@ -240,14 +240,14 @@ object MainForm: TMainForm
       end
       object IdentList: TListBox
         Left = 4
-        Height = 237
+        Height = 257
         Top = 21
         Width = 290
         Anchors = [akTop, akLeft, akRight, akBottom]
         ItemHeight = 0
+        TabOrder = 0
         OnClick = IdentListClick
         OnDrawItem = IdentListDrawItem
-        TabOrder = 0
       end
     end
   end
@@ -276,8 +276,8 @@ object MainForm: TMainForm
       Width = 708
       Anchors = [akTop, akLeft, akRight, akBottom]
       ItemHeight = 0
-      OnClick = AllIdentListClick
       TabOrder = 0
+      OnClick = AllIdentListClick
     end
   end
   object Panel1: TPanel
@@ -312,8 +312,8 @@ object MainForm: TMainForm
       Top = 3
       Width = 266
       AutoSize = False
-      OnKeyPress = FindEditKeyPress
       TabOrder = 0
+      OnKeyPress = FindEditKeyPress
     end
     object Button1: TButton
       Left = 302
@@ -321,8 +321,8 @@ object MainForm: TMainForm
       Top = 3
       Width = 24
       Caption = 'Go'
-      OnClick = Button1Click
       TabOrder = 1
+      OnClick = Button1Click
     end
     object FindKindCbo: TComboBox
       Left = 347
@@ -336,16 +336,16 @@ object MainForm: TMainForm
         'Local language'
         'Original language'
       )
-      OnClick = FindKindCboClick
       Style = csDropDownList
       TabOrder = 2
       Text = 'Local language'
+      OnClick = FindKindCboClick
     end
   end
   object FooterPanel: TPanel
     Left = 0
     Height = 23
-    Top = 407
+    Top = 427
     Width = 715
     Align = alBottom
     BevelOuter = bvNone

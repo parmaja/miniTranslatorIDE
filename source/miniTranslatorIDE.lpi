@@ -23,19 +23,18 @@
       <MinorVersionNr Value="2"/>
       <RevisionNr Value="2"/>
     </VersionInfo>
-    <BuildModes Count="2" Active="Debug">
+    <BuildModes Count="2" Active="Release">
       <Item1 Name="Debug" Default="True"/>
       <Item2 Name="Release">
         <CompilerOptions>
           <Version Value="11"/>
           <PathDelim Value="\"/>
           <Target>
-            <Filename Value="..\..\bin\Translator.exe"/>
+            <Filename Value="..\bin\Translator"/>
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="..\lib;W:\home\pascal\lib\minilib\Commons\;W:\home\pascal\lib\minilib\MiniTranslator\source\;W:\home\pascal\lib\minilib\MiniConnection\source\;W:\home\pascal\lib\minilib\MiniXml\source\"/>
-            <UnitOutputDirectory Value="..\..\units"/>
+            <UnitOutputDirectory Value="..\units"/>
           </SearchPaths>
           <Parsing>
             <SyntaxOptions>
@@ -51,6 +50,7 @@
           <Linking>
             <Debugging>
               <GenerateDebugInfo Value="False"/>
+              <DebugInfoType Value="dsDwarf3"/>
             </Debugging>
             <LinkSmart Value="True"/>
             <Options>
@@ -80,13 +80,13 @@
     </RunParams>
     <RequiredPackages Count="3">
       <Item1>
-        <PackageName Value="MiniTranslator"/>
+        <PackageName Value="LCL"/>
       </Item1>
       <Item2>
         <PackageName Value="MiniXML"/>
       </Item2>
       <Item3>
-        <PackageName Value="LCL"/>
+        <PackageName Value="MiniTranslator"/>
       </Item3>
     </RequiredPackages>
     <Units Count="122">
@@ -94,7 +94,7 @@
         <Filename Value="miniTranslatorIDE.lpr"/>
         <IsPartOfProject Value="True"/>
         <TopLine Value="6"/>
-        <CursorPos X="30" Y="19"/>
+        <CursorPos X="15" Y="20"/>
         <UsageCount Value="102"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -105,7 +105,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="5"/>
+        <CursorPos X="66" Y="10"/>
         <UsageCount Value="102"/>
       </Unit1>
       <Unit2>
@@ -154,14 +154,17 @@
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="1236"/>
-        <CursorPos X="114" Y="1238"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="732"/>
+        <CursorPos X="54" Y="739"/>
         <UsageCount Value="102"/>
         <Bookmarks Count="2">
-          <Item0 X="5" Y="842" ID="1"/>
-          <Item1 X="3" Y="1196" ID="2"/>
+          <Item0 X="5" Y="844" ID="1"/>
+          <Item1 X="3" Y="1198" ID="2"/>
         </Bookmarks>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit6>
       <Unit7>
         <Filename Value="Main.lfm"/>
@@ -310,8 +313,8 @@
         <ComponentName Value="NewProjectForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="4"/>
-        <CursorPos Y="17"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="17" Y="15"/>
         <UsageCount Value="88"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -772,7 +775,7 @@
       <Unit111>
         <Filename Value="trsProjects.pas"/>
         <EditorIndex Value="3"/>
-        <CursorPos Y="8"/>
+        <CursorPos X="3" Y="16"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit111>
@@ -793,8 +796,6 @@
       <Unit114>
         <Filename Value="..\..\miniTranslator\mnLangClasses.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="321"/>
-        <CursorPos X="7" Y="332"/>
         <UsageCount Value="10"/>
       </Unit114>
       <Unit115>
@@ -821,83 +822,74 @@
       </Unit117>
       <Unit118>
         <Filename Value="..\..\minilib\lib\mnUtils.pas"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit118>
       <Unit119>
         <Filename Value="..\..\minilib\lib\mnTypes.pas"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="17"/>
         <CursorPos Y="20"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit119>
       <Unit120>
         <Filename Value="..\..\miniTranslator\package\MiniTranslator.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <CursorPos X="52" Y="11"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="40" Y="11"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit120>
       <Unit121>
         <Filename Value="..\..\miniTranslator\mnLangSupports.pas"/>
-        <EditorIndex Value="2"/>
-        <CursorPos X="21"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="6" Y="2"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit121>
     </Units>
-    <JumpHistory Count="12" HistoryIndex="11">
+    <JumpHistory Count="11" HistoryIndex="10">
       <Position1>
         <Filename Value="miniTranslatorIDE.lpr"/>
-        <Caret Line="40" Column="46" TopLine="17"/>
+        <Caret Line="18" Column="45"/>
       </Position1>
       <Position2>
-        <Filename Value="miniTranslatorIDE.lpr"/>
-        <Caret Line="19" Column="26" TopLine="9"/>
+        <Filename Value="NewProjectForms.pas"/>
+        <Caret Line="15" Column="3"/>
       </Position2>
       <Position3>
-        <Filename Value="trsProjects.pas"/>
-        <Caret Line="9" Column="51"/>
+        <Filename Value="NewProjectForms.pas"/>
+        <Caret Line="14" Column="67"/>
       </Position3>
       <Position4>
-        <Filename Value="miniTranslatorIDE.lpr"/>
-        <Caret Line="23" Column="44" TopLine="8"/>
+        <Filename Value="trsProjects.pas"/>
+        <Caret Line="16" Column="3"/>
       </Position4>
       <Position5>
         <Filename Value="trsProjects.pas"/>
-        <Caret Line="8" Column="28"/>
+        <Caret Line="15" Column="18"/>
       </Position5>
       <Position6>
-        <Filename Value="NewProjectForms.pas"/>
-        <Caret Line="17" Column="51"/>
+        <Filename Value="trsProjects.pas"/>
+        <Caret Line="16" Column="3"/>
       </Position6>
       <Position7>
         <Filename Value="miniTranslatorIDE.lpr"/>
-        <Caret Line="11" Column="62" TopLine="6"/>
+        <Caret Line="20" Column="15" TopLine="6"/>
       </Position7>
       <Position8>
-        <Filename Value="..\..\miniTranslator\package\MiniTranslator.pas"/>
-        <Caret Line="15" Column="63"/>
+        <Filename Value="NewProjectForms.pas"/>
+        <Caret Line="55" Column="28" TopLine="40"/>
       </Position8>
       <Position9>
-        <Filename Value="miniTranslatorIDE.lpr"/>
-        <Caret Line="19" Column="32" TopLine="6"/>
+        <Filename Value="Main.pas"/>
+        <Caret Line="1238" Column="114" TopLine="1237"/>
       </Position9>
       <Position10>
-        <Filename Value="trsProjects.pas"/>
-        <Caret Line="8"/>
+        <Filename Value="Main.pas"/>
+        <Caret Line="346" Column="5" TopLine="333"/>
       </Position10>
       <Position11>
-        <Filename Value="..\..\miniTranslator\mnLangSupports.pas"/>
-        <Caret Column="21"/>
+        <Filename Value="Main.pas"/>
+        <Caret Line="201" Column="15" TopLine="188"/>
       </Position11>
-      <Position12>
-        <Filename Value="..\..\miniTranslator\package\MiniTranslator.pas"/>
-        <Caret Line="15" Column="55"/>
-      </Position12>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
@@ -950,7 +942,7 @@
         <WatchScope Value="wpsLocal"/>
         <WatchKind Value="wpkWrite"/>
         <Source Value="Main.pas"/>
-        <Line Value="1161"/>
+        <Line Value="1163"/>
       </Item1>
     </BreakPoints>
     <Exceptions Count="3">

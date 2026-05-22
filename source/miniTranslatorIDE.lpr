@@ -14,7 +14,7 @@ uses
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
   SysUtils, Classes, Controls, Forms, AboutForms, OptionForms, LogForms,
-  Setups, Main, trsProjects, NewProjectForms, MiniTranslator;
+  Setups, Main, trsProjects, NewProjectForms;
 
 function CheckSetup: Boolean;
 begin

@@ -9,9 +9,9 @@ object NewProjectForm: TNewProjectForm
   ClientWidth = 349
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
-  OnCreate = FormCreate
   Position = poMainFormCenter
-  LCLVersion = '2.1.0.0'
+  LCLVersion = '4.99.0.0'
+  OnCreate = FormCreate
   object Label5: TLabel
     Left = 6
     Height = 13
@@ -64,8 +64,8 @@ object NewProjectForm: TNewProjectForm
     Cancel = True
     Caption = 'Cancel'
     ModalResult = 2
-    OnClick = Button4Click
     TabOrder = 1
+    OnClick = Button4Click
   end
   object FilerCbo: TComboBox
     Left = 47

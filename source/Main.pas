@@ -735,6 +735,8 @@ procedure TMainForm.LoadFile(FileName: string);
 var
   e: string;
 begin
+  if not FileExists(FileName) then
+    raise Exception.Create(ExtractFileName(FileName) + ' not exists');
   if AskCloseProject then
   begin
     e := ExtractFileExt(ExtractFileName(FileName));
