@@ -220,15 +220,18 @@ begin
     for j := 0 to Items[i].Count - 1 do
     begin
       aItem1 := Items[i].Items[j];
-      //aItem2 := WithLanguage.Values[Items[i].Name].Find(Items[i].Items[j].ID);
-      if (RightStr(aItem2.Text, 1) = '.') and (RightStr(aItem1.Text, 1) <> '.') then
+      aItem2 := WithLanguage.FindID(Items[i].Name, Items[i].Items[j].ID);
+      if aItem2 <> nil then
       begin
-        aItem1.Text := aItem1.Text + '.';
-      end
-      else if (RightStr(aItem2.Text, 1) <> '.') and (RightStr(aItem1.Text, 1) = '.') then
-      begin
-        aItem1.Text := Copy(aItem1.Text, 1, Length(aItem1.Text) - 1);
-      end
+        if (RightStr(aItem2.Text, 1) = '.') and (RightStr(aItem1.Text, 1) <> '.') then
+        begin
+          aItem1.Text := aItem1.Text + '.';
+        end
+        else if (RightStr(aItem2.Text, 1) <> '.') and (RightStr(aItem1.Text, 1) = '.') then
+        begin
+          aItem1.Text := Copy(aItem1.Text, 1, Length(aItem1.Text) - 1);
+        end;
+      end;
     end;
   end;
 end;
@@ -241,23 +244,22 @@ var
 begin
   aAll := '';
   Result := '';
-  try
-    for i := 0 to LangOptions.FilerClasses.Count - 1 do
+  for i := 0 to LangOptions.FilerClasses.Count - 1 do
+  begin
     if (vFlags * LangOptions.FilerClasses[i].GetFlags) = vFlags then
     begin
       if Result <> '' then
         Result := Result + '|';
-        s := '*.' + LangOptions.FilerClasses[i].GetExtension;
-        if aAll <> '' then
-          aAll := aAll + ';';
-        aAll := aAll + '*.' + LangOptions.FilerClasses[i].GetExtension;
+      s := '*.' + LangOptions.FilerClasses[i].GetExtension;
+      if aAll <> '' then
+        aAll := aAll + ';';
+      aAll := aAll + '*.' + LangOptions.FilerClasses[i].GetExtension;
       Result := Result + LangOptions.FilerClasses[i].GetTitle + ' (' + s + ')|' + s;
     end;
-  finally
   end;
 
   if Result <> '' then
-    Result := 'All files ('+aAll+')|' + aAll + '|' + Result;
+    Result := 'All files (' + aAll + ')|' + aAll + '|' + Result;
 
   if Result <> '' then
     Result := Result + '|';

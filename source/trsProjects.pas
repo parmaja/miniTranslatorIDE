@@ -179,6 +179,8 @@ procedure TtrsProject.LoadLanguage;
 var
   b1, b2: Boolean;
 begin
+  b1 := True;
+  b2 := True;
   if (LocalName <> '') then
   begin
     LoadDictionary(LocalName, Dictionary.Local);
@@ -247,27 +249,30 @@ var
   aOldFiles: TLanguage;
   b1: Boolean;
 begin
+  b1 := True;
   if (OriginalName = '') then
     LoadLanguage
   else if (LocalName <> '') and (OriginalName <> '') then
   begin
     aOldFiles := nil;
-    LoadDictionary(LocalName, aOldFiles);
-    LoadDictionary(OriginalName, Dictionary.Local);
-    LoadDictionary(OriginalName, Dictionary.Original);
-    //Local.Files[0].FileName := aOldFiles.Files[0].FileName; //zaher ya zaher
-    Log.BeginUpdate;
-    Log.Add('--------- deprecated words ---------');
-    Log.Add('');
-    //b1 := aOldFiles.Compare(Original, Log);
-    Log.Add('');
-    Log.Add('--------- New words ---------');
-    Log.Add('');
-    Log.EndUpdate;
-//    Local.Import(aOldFiles, Log);
-    if not b1 then
-      HaveWarring := True;
-    aOldFiles.Free;
+    try
+      LoadDictionary(LocalName, aOldFiles);
+      LoadDictionary(OriginalName, Dictionary.Local);
+      LoadDictionary(OriginalName, Dictionary.Original);
+      //Local.Files[0].FileName := aOldFiles.Files[0].FileName;
+      Log.BeginUpdate;
+      Log.Add('--------- deprecated words ---------');
+      Log.Add('');
+      //b1 := aOldFiles.Compare(Original, Log);
+      Log.Add('');
+      Log.Add('--------- New words ---------');
+      Log.Add('');
+      Log.EndUpdate;
+      if not b1 then
+        HaveWarring := True;
+    finally
+      aOldFiles.Free;
+    end;
   end;
 end;
 
@@ -301,11 +306,8 @@ begin
 end;
 
 procedure TtrsEngine.LoadOptions;
-var
-  s:string;
 begin
   Options.SafeLoadFromFile(WorkPath + 'options.xml');
-  s := Options.Font.Name;
 end;
 
 procedure TtrsEngine.SaveOptions;

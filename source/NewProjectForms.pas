@@ -49,7 +49,7 @@ implementation
 function ShowNewProject: TtrsProject;
 begin
   with TNewProjectForm.Create(Application) do
-  begin
+  try
     if ShowModal = mrOk then
     begin
       Result := TtrsProject.Create;
@@ -59,6 +59,8 @@ begin
     end
     else
       Result := nil;
+  finally
+    Free;
   end;
 end;
 

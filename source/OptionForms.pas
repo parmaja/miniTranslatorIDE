@@ -55,7 +55,7 @@ var
   OldOriginal, OldLocal: string;
 begin
   with TOptionsForm.Create(Application) do
-  begin
+  try
     FProject := Project;
     ProjectTypeEdit.Text := FProject.FilerClass.GetTitle;
     NameEdit.Text := FProject.Name;
@@ -91,6 +91,8 @@ begin
           FProject.LoadLanguage;
       end;
     end;
+  finally
+    Free;
   end;
 end;
 

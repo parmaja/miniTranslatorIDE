@@ -45,8 +45,9 @@ implementation
 function ShowSetup: Boolean;
 begin
   with TSetupForm.Create(Application) do
-  begin
+  try
     Result := ShowModal = mrOK;
+  finally
     Free;
   end;
 end;

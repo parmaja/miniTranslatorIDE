@@ -36,9 +36,11 @@ implementation
 procedure ShowLogForm(Log:TStrings);
 begin
   with TLogForm.Create(Application) do
-  begin
+  try
     LogMemo.Lines.Assign(Log);
     ShowModal;
+  finally
+    Free;
   end;
 end;
 

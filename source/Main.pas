@@ -447,8 +447,9 @@ end;
 procedure TMainForm.AboutMnuClick(Sender: TObject);
 begin
   with TAboutForm.Create(Application) do
-  begin
+  try
     ShowModal;
+  finally
     Free;
   end;
 end;
@@ -487,6 +488,7 @@ var
   aItem: TLangItem;
   Dictionary: TLanguage;
 begin
+  aItem := nil;
   if FindInLocalMnu.Checked then
     Dictionary := Project.Dictionary.Local
   else
@@ -494,11 +496,8 @@ begin
   if (Project.Dictionary.Local <> nil) and InputQuery('Find Value', 'Enter any text to find', Project.FindWordStr) then
   begin
     ResetFind;
-    //aItem := Dictionary.FindID;
     if aItem <> nil then
-    begin
-      JumpTo(aItem);
-    end
+      JumpTo(aItem)
     else
       ShowMessage('Not found');
   end;
@@ -515,6 +514,7 @@ var
   Dictionary: TLanguage;
 begin
   Result := False;
+  aItem := nil;
   if FindInLocalMnu.Checked then
     Dictionary := Project.Dictionary.Local
   else
@@ -1137,13 +1137,16 @@ var
   aLog: TStringList;
 begin
   if Project.Dictionary.Original <> nil then
-    raise Exception.Create('You must open orginal language as single file');
+    raise Exception.Create('You must open original language as single file');
   aLog := Project.Dictionary.Local.RemoveDublicated(False);
-  if aLog.Count > 0 then
-    ShowLogForm(aLog)
-  else
-    ShowMessage('There is no any dublicated!');
-  aLog.Free;
+  try
+    if aLog.Count > 0 then
+      ShowLogForm(aLog)
+    else
+      ShowMessage('There is no any duplicated!');
+  finally
+    aLog.Free;
+  end;
 end;
 
 procedure TMainForm.ReportDuplicatedMnuClick(Sender: TObject);
@@ -1152,32 +1155,34 @@ var
   aDictionary: TLanguage;
 begin
   if Project.Dictionary.Original <> nil then
-  begin
-    aDictionary := Project.Dictionary.Original;
-    ShowMessage('You must open orginal language as single file');
-  end
-  else
-    aDictionary := Project.Dictionary.Local;
+    raise Exception.Create('You must open original language as single file');
+  aDictionary := Project.Dictionary.Local;
   aLog := aDictionary.RemoveDublicated(True);
-  if aLog.Count > 0 then
-  begin
-    ShowMessage('There is a dublicated: ' + IntToStr(aLog.Count));
-    ShowLogForm(aLog)
-  end
-  else
-    ShowMessage('There is no any dublicated!');
-  aLog.Free;
+  try
+    if aLog.Count > 0 then
+    begin
+      ShowMessage('There is duplicated: ' + IntToStr(aLog.Count));
+      ShowLogForm(aLog);
+    end
+    else
+      ShowMessage('There is no any duplicated!');
+  finally
+    aLog.Free;
+  end;
 end;
 
 procedure TMainForm.ProgressRreportMnuClick(Sender: TObject);
 var
   Log: TStringList;
 begin
-  Log := Project.Dictionary.Local.ProgressReport;
-  try
-    ShowLogForm(Log);
-  finally
-    Log.Free;
+  if (Project <> nil) and (Project.Dictionary.Local <> nil) then
+  begin
+    Log := Project.Dictionary.Local.ProgressReport;
+    try
+      ShowLogForm(Log);
+    finally
+      Log.Free;
+    end;
   end;
 end;
 
@@ -1216,8 +1221,11 @@ begin
   if (Project <> nil) then
   begin
     aLog := Project.Dictionary.Original.Retranslate(Project.Dictionary.Local, False);
-    ShowLogForm(aLog);
-    aLog.Free;
+    try
+      ShowLogForm(aLog);
+    finally
+      aLog.Free;
+    end;
   end;
 end;
 
@@ -1228,8 +1236,11 @@ begin
   if (Project <> nil) then
   begin
     aLog := Project.Dictionary.Original.Retranslate(Project.Dictionary.Local, True);
-    ShowLogForm(aLog);
-    aLog.Free;
+    try
+      ShowLogForm(aLog);
+    finally
+      aLog.Free;
+    end;
   end;
 end;
 
@@ -1251,7 +1262,7 @@ end;
 
 function TMainForm.GetProject: TtrsProject;
 begin
-  if FProject= nil then
+  if FProject = nil then
     FProject := CreateDefaultProject('');
   Result := FProject;
 end;
