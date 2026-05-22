@@ -1,4 +1,4 @@
-program Translator;
+program miniTranslatorIDE;
 {**
  * Mini Translator
  *
@@ -14,7 +14,7 @@ uses
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
   SysUtils, Classes, Controls, Forms, AboutForms, OptionForms, LogForms,
-  Setups, Main, trsProjects, NewProjectForms;
+  Setups, Main, trsProjects, NewProjectForms, MiniTranslator;
 
 function CheckSetup: Boolean;
 begin
