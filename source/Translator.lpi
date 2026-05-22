@@ -89,12 +89,12 @@
         <PackageName Value="LCL"/>
       </Item3>
     </RequiredPackages>
-    <Units Count="113">
+    <Units Count="120">
       <Unit0>
         <Filename Value="Translator.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="17"/>
-        <CursorPos X="46" Y="40"/>
+        <TopLine Value="8"/>
+        <CursorPos X="8" Y="23"/>
         <UsageCount Value="102"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -104,11 +104,9 @@
         <ComponentName Value="AboutForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="5"/>
         <UsageCount Value="102"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="LogForms.pas"/>
@@ -116,12 +114,10 @@
         <ComponentName Value="LogForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="12"/>
         <CursorPos X="11" Y="34"/>
         <UsageCount Value="102"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="OptionForms.pas"/>
@@ -129,12 +125,10 @@
         <ComponentName Value="OptionsForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="26"/>
         <CursorPos X="58" Y="27"/>
         <UsageCount Value="102"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="Setups.pas"/>
@@ -142,12 +136,10 @@
         <ComponentName Value="SetupForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="2"/>
         <CursorPos X="5" Y="25"/>
         <UsageCount Value="75"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="TrasnlatorClassForms.pas"/>
@@ -162,8 +154,7 @@
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="1236"/>
         <CursorPos X="114" Y="1238"/>
         <UsageCount Value="102"/>
@@ -171,27 +162,22 @@
           <Item0 X="5" Y="842" ID="1"/>
           <Item1 X="3" Y="1196" ID="2"/>
         </Bookmarks>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit6>
       <Unit7>
         <Filename Value="Main.lfm"/>
         <TopLine Value="554"/>
         <CursorPos X="19" Y="572"/>
         <UsageCount Value="4"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit7>
       <Unit8>
         <Filename Value="..\..\clean.cmd"/>
         <CursorPos X="72"/>
         <UsageCount Value="4"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit8>
       <Unit9>
         <Filename Value="..\..\..\miniSQLViewer\clean.cmd"/>
         <CursorPos Y="2"/>
         <UsageCount Value="4"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit9>
       <Unit10>
         <Filename Value="TranslatorProjects.pas"/>
@@ -203,29 +189,24 @@
         <Filename Value="..\..\release.cmd"/>
         <CursorPos X="10"/>
         <UsageCount Value="4"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit11>
       <Unit12>
         <Filename Value="..\..\backup.cmd"/>
         <UsageCount Value="4"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit12>
       <Unit13>
         <Filename Value="..\..\source.lst"/>
         <UsageCount Value="4"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit13>
       <Unit14>
         <Filename Value="..\..\compile.cmd"/>
         <UsageCount Value="4"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit14>
       <Unit15>
         <Filename Value="..\..\extra.cfg"/>
         <TopLine Value="10"/>
         <CursorPos X="4" Y="31"/>
         <UsageCount Value="4"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit15>
       <Unit16>
         <Filename Value="d:\MiniTranslator\source\LangClasses.pas"/>
@@ -322,7 +303,6 @@
       <Unit32>
         <Filename Value="NewProjectForms.lfm"/>
         <UsageCount Value="4"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit32>
       <Unit33>
         <Filename Value="NewProjectForms.pas"/>
@@ -330,9 +310,8 @@
         <ComponentName Value="NewProjectForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="7"/>
-        <TopLine Value="22"/>
-        <CursorPos X="11" Y="44"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="51" Y="17"/>
         <UsageCount Value="88"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -371,22 +350,18 @@
         <Filename Value="..\..\demos\test\test.po"/>
         <CursorPos Y="27"/>
         <UsageCount Value="6"/>
-        <DefaultSyntaxHighlighter Value="PO"/>
       </Unit39>
       <Unit40>
         <Filename Value="..\..\demos\test\drupal-ar.po"/>
         <UsageCount Value="6"/>
-        <DefaultSyntaxHighlighter Value="PO"/>
       </Unit40>
       <Unit41>
         <Filename Value="..\..\demos\test\en.po"/>
         <UsageCount Value="10"/>
-        <DefaultSyntaxHighlighter Value="PO"/>
       </Unit41>
       <Unit42>
         <Filename Value="..\..\demos\test\ar.po"/>
         <UsageCount Value="8"/>
-        <DefaultSyntaxHighlighter Value="PO"/>
       </Unit42>
       <Unit43>
         <Filename Value="d:\programs\fpc\src\rtl\objpas\sysutils\filutilh.inc"/>
@@ -413,7 +388,6 @@
         <Filename Value="d:\workspace\lazarus\idemake.cfg"/>
         <CursorPos Y="16"/>
         <UsageCount Value="6"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit47>
       <Unit48>
         <Filename Value="d:\programs\lazarus\ide\buildmanager.pas"/>
@@ -439,7 +413,6 @@
         <Filename Value="d:\workspace\miniTranslator\options.xml"/>
         <CursorPos X="26" Y="12"/>
         <UsageCount Value="8"/>
-        <DefaultSyntaxHighlighter Value="XML"/>
       </Unit51>
       <Unit52>
         <Filename Value="d:\programs\lazarus\lcl\graphics.pp"/>
@@ -562,7 +535,6 @@
         <Filename Value="D:\Users\Job\Desktop\MiniTranslator\demos\test\ar.po"/>
         <CursorPos X="40" Y="16"/>
         <UsageCount Value="8"/>
-        <DefaultSyntaxHighlighter Value="PO"/>
       </Unit71>
       <Unit72>
         <Filename Value="d:\programs\lazarus\ideintf\texttools.pas"/>
@@ -588,7 +560,6 @@
       <Unit75>
         <Filename Value="..\..\bin\init.cfg"/>
         <UsageCount Value="8"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit75>
       <Unit76>
         <Filename Value="D:\Users\Job\Desktop\MiniTranslator\extra\FluxBB_Parser.pas"/>
@@ -597,13 +568,11 @@
       <Unit77>
         <Filename Value="D:\Users\Job\Desktop\minilib1\Lazarus\projects\miniTranslator\demos\test\en.po"/>
         <UsageCount Value="8"/>
-        <DefaultSyntaxHighlighter Value="PO"/>
       </Unit77>
       <Unit78>
         <Filename Value="d:\programs\lazarus\languages\lazaruside.ar.po"/>
         <CursorPos X="28" Y="22"/>
         <UsageCount Value="10"/>
-        <DefaultSyntaxHighlighter Value="PO"/>
       </Unit78>
       <Unit79>
         <Filename Value="d:\programs\fpc\src\rtl\objpas\classes\stringl.inc"/>
@@ -615,7 +584,6 @@
         <Filename Value="d:\programs\lazarus\languages\lazaruside.he.po"/>
         <CursorPos X="33" Y="18"/>
         <UsageCount Value="8"/>
-        <DefaultSyntaxHighlighter Value="PO"/>
       </Unit80>
       <Unit81>
         <Filename Value="..\lib\FluxBB_Parser.pas"/>
@@ -774,15 +742,13 @@
         <Filename Value="Translator.rc"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
-        <DefaultSyntaxHighlighter Value="None"/>
       </Unit106>
       <Unit107>
         <Filename Value="trsClasses.pas"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="12"/>
         <CursorPos X="3" Y="30"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit107>
       <Unit108>
         <Filename Value="..\..\minilib\translator\INI_Parser.pas"/>
@@ -805,134 +771,124 @@
       </Unit110>
       <Unit111>
         <Filename Value="trsProjects.pas"/>
-        <EditorIndex Value="9"/>
-        <CursorPos X="17"/>
+        <EditorIndex Value="1"/>
+        <CursorPos Y="8"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit111>
       <Unit112>
         <Filename Value="..\..\minilib\translator\mnLangClasses.pas"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="183"/>
         <CursorPos X="3" Y="206"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit112>
+      <Unit113>
+        <Filename Value="..\..\miniTranslator\INI_Parser.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="19"/>
+        <CursorPos X="15" Y="35"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit113>
+      <Unit114>
+        <Filename Value="..\..\miniTranslator\mnLangClasses.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="321"/>
+        <CursorPos X="7" Y="332"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit114>
+      <Unit115>
+        <Filename Value="..\..\miniTranslator\PO_Languages.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="224"/>
+        <CursorPos X="57" Y="233"/>
+        <UsageCount Value="10"/>
+        <Bookmarks Count="1">
+          <Item0 X="47" Y="240" Left="1" Top="224" ID="1"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit115>
+      <Unit116>
+        <Filename Value="..\..\miniTranslator\IS_Parser.pas"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="19"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit116>
+      <Unit117>
+        <Filename Value="..\..\miniTranslator\FluxBB_Parser.pas"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="16"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit117>
+      <Unit118>
+        <Filename Value="..\..\minilib\lib\mnUtils.pas"/>
+        <EditorIndex Value="8"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit118>
+      <Unit119>
+        <Filename Value="..\..\minilib\lib\mnTypes.pas"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="17"/>
+        <CursorPos Y="20"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit119>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="12" HistoryIndex="11">
       <Position1>
-        <Filename Value="Setups.pas"/>
-        <Caret Line="92" TopLine="62"/>
+        <Filename Value="Translator.lpr"/>
+        <Caret Line="40" Column="46" TopLine="17"/>
       </Position1>
       <Position2>
-        <Filename Value="Setups.pas"/>
+        <Filename Value="..\..\miniTranslator\PO_Languages.pas"/>
+        <Caret Line="63" Column="36" TopLine="43"/>
       </Position2>
       <Position3>
-        <Filename Value="Setups.pas"/>
-        <Caret Line="107" Column="5" TopLine="84"/>
+        <Filename Value="Translator.lpr"/>
+        <Caret Line="19" Column="26" TopLine="9"/>
       </Position3>
       <Position4>
-        <Filename Value="Setups.pas"/>
+        <Filename Value="..\..\miniTranslator\PO_Languages.pas"/>
+        <Caret Line="19" Column="8"/>
       </Position4>
       <Position5>
-        <Filename Value="Main.pas"/>
-        <Caret Line="234" Column="3" TopLine="211"/>
+        <Filename Value="trsProjects.pas"/>
+        <Caret Line="9" Column="51"/>
       </Position5>
       <Position6>
-        <Filename Value="Main.pas"/>
-        <Caret Line="115" TopLine="115"/>
+        <Filename Value="Translator.lpr"/>
+        <Caret Line="23" Column="44" TopLine="8"/>
       </Position6>
       <Position7>
-        <Filename Value="Main.pas"/>
-        <Caret Line="239" TopLine="216"/>
+        <Filename Value="trsProjects.pas"/>
+        <Caret Line="8" Column="28"/>
       </Position7>
       <Position8>
-        <Filename Value="Setups.pas"/>
-        <Caret Line="43" TopLine="21"/>
+        <Filename Value="..\..\miniTranslator\mnLangClasses.pas"/>
+        <Caret Line="332" Column="7" TopLine="321"/>
       </Position8>
       <Position9>
-        <Filename Value="AboutForms.pas"/>
+        <Filename Value="NewProjectForms.pas"/>
+        <Caret Line="17" Column="51"/>
       </Position9>
       <Position10>
-        <Filename Value="AboutForms.pas"/>
-        <Caret Line="43" TopLine="20"/>
+        <Filename Value="..\..\miniTranslator\PO_Languages.pas"/>
+        <Caret Line="240" Column="48" TopLine="224"/>
       </Position10>
       <Position11>
-        <Filename Value="AboutForms.pas"/>
+        <Filename Value="..\..\miniTranslator\PO_Languages.pas"/>
+        <Caret Line="18" Column="50"/>
       </Position11>
       <Position12>
-        <Filename Value="LogForms.pas"/>
-        <Caret Line="32" Column="20" TopLine="9"/>
+        <Filename Value="..\..\miniTranslator\PO_Languages.pas"/>
+        <Caret Line="86" Column="11" TopLine="70"/>
       </Position12>
-      <Position13>
-        <Filename Value="LogForms.pas"/>
-        <Caret Line="49" TopLine="26"/>
-      </Position13>
-      <Position14>
-        <Filename Value="LogForms.pas"/>
-      </Position14>
-      <Position15>
-        <Filename Value="NewProjectForms.pas"/>
-        <Caret Line="15" Column="5"/>
-      </Position15>
-      <Position16>
-        <Filename Value="NewProjectForms.pas"/>
-        <Caret Line="77" TopLine="55"/>
-      </Position16>
-      <Position17>
-        <Filename Value="NewProjectForms.pas"/>
-      </Position17>
-      <Position18>
-        <Filename Value="OptionForms.pas"/>
-        <Caret Line="15" Column="56" TopLine="3"/>
-      </Position18>
-      <Position19>
-        <Filename Value="OptionForms.pas"/>
-        <Caret Line="131" TopLine="109"/>
-      </Position19>
-      <Position20>
-        <Filename Value="OptionForms.pas"/>
-      </Position20>
-      <Position21>
-        <Filename Value="Setups.pas"/>
-        <Caret Line="109" Column="5" TopLine="86"/>
-      </Position21>
-      <Position22>
-        <Filename Value="Setups.pas"/>
-        <Caret Line="90" Column="4" TopLine="86"/>
-      </Position22>
-      <Position23>
-        <Filename Value="Main.pas"/>
-        <Caret Line="1280" TopLine="1258"/>
-      </Position23>
-      <Position24>
-        <Filename Value="Main.pas"/>
-        <Caret Line="1161" Column="39" TopLine="1138"/>
-      </Position24>
-      <Position25>
-        <Filename Value="trsClasses.pas"/>
-        <Caret Line="17" Column="30" TopLine="4"/>
-      </Position25>
-      <Position26>
-        <Filename Value="trsClasses.pas"/>
-        <Caret Line="33" Column="14" TopLine="4"/>
-      </Position26>
-      <Position27>
-        <Filename Value="trsClasses.pas"/>
-        <Caret Line="139" Column="3" TopLine="134"/>
-      </Position27>
-      <Position28>
-        <Filename Value="trsClasses.pas"/>
-        <Caret Line="30" Column="39" TopLine="7"/>
-      </Position28>
-      <Position29>
-        <Filename Value="Main.pas"/>
-        <Caret Line="52" Column="32" TopLine="24"/>
-      </Position29>
-      <Position30>
-        <Filename Value="Main.pas"/>
-        <Caret Line="1245" Column="69" TopLine="1235"/>
-      </Position30>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
@@ -963,6 +919,7 @@
     </CodeGeneration>
     <Linking>
       <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
         <TrashVariables Value="True"/>
         <UseExternalDbgSyms Value="True"/>
       </Debugging>

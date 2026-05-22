@@ -28,8 +28,8 @@ end;
 {$R *.res}
 
 begin
-  Application.Scaled :=True;
-  Application.Title :='Mini Translator';
+  Application.Scaled:=True;
+  Application.Title:='Mini Translator';
   Application.Initialize;
   trsEngine.Init;
   if CheckSetup then
